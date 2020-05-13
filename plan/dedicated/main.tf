@@ -17,7 +17,7 @@ resource "azurerm_app_service_plan" "app_service_plan" {
 
 module "func_storage" {
   
-  source                = "../../../storage/blob"
+  source                = "github.com/markti/tf_azure_storage/blob/account"
   resource_group_name   = var.resource_group_name
   location              = var.location
   app_name              = var.app_name
