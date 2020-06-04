@@ -9,8 +9,6 @@ resource "azurerm_app_service_plan" "app_service_plan" {
     size = "EP2"
   }
 
-  pre_warmed_instance_count = 1
-
   tags = {
     app = var.app_name
     env = var.env_name
