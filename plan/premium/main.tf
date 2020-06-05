@@ -7,9 +7,9 @@ resource "azurerm_app_service_plan" "app_service_plan" {
   sku {
     tier = "ElasticPremium"
     size = "EP2"
+    capacity = var.capacity
   }
 
-  capacity = var.capacity
   maximum_elastic_worker_count = var.maximum_worker_count
 
   tags = {
