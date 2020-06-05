@@ -9,6 +9,9 @@ resource "azurerm_app_service_plan" "app_service_plan" {
     size = "EP2"
   }
 
+  capacity = var.capacity
+  maximum_elastic_worker_count = var.maximum_worker_count
+
   tags = {
     app = var.app_name
     env = var.env_name
