@@ -16,9 +16,9 @@ variable "env_name" { }
 variable "storage_type" { 
   default = "GRS" 
 }
-variable "maximum_worker_count" {
+variable "maximum_instance_count" {
   default = 1
 }
-variable "capacity" {
+variable "minimum_instance_count" {
   default = 1
 }
